@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090d0b">
+    <meta name="description" content="LarpLauncher lets tiny Python scripts tell Discord you're busy in a much bigger game.">
+    <title>LarpLauncher — look busy, play it cool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="LarpLauncher home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M7 8.5 16 4l9 4.5v15L16 28l-9-4.5v-15Z" stroke="currentColor" stroke-width="1.7"/>
+              <path d="m12 12 7 4-7 4v-8Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">Larp<span>Launcher</span></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#demo">Demo</a>
+          <a href="https://github.com/your-username/LarpLauncher" target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <a class="version-pill" href="https://github.com/your-username/LarpLauncher/releases" target="_blank" rel="noreferrer">
+          <span class="online-dot" aria-hidden="true"></span> v0.1.0-beta
+        </a>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR STATUS, YOUR STORY</p>
+            <h1 id="hero-title">Look busy.<br><span>Play it cool.</span></h1>
+            <p class="intro">A tiny Python file. A very convincing game session. LarpLauncher lets you show Discord what you’re “playing” — even if it’s <em>GTA 6</em>.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://github.com/harshilarora250/larplauncher/releases/tag/v0.1.0-beta" target="_blank" rel="noreferrer">
+                Get the beta</span>
+              </a>
+              <a class="button button-quiet" href="https://github.com/harshilarora250/LarpLauncher" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.55.1.75-.24.75-.53v-2.08c-3.07.67-3.72-1.3-3.72-1.3-.5-1.27-1.23-1.6-1.23-1.6-1-.7.08-.69.08-.69 1.1.08 1.69 1.14 1.69 1.14.99 1.68 2.58 1.2 3.21.91.1-.72.39-1.2.7-1.47-2.45-.28-5.03-1.22-5.03-5.45 0-1.2.43-2.18 1.14-2.95-.11-.28-.5-1.4.11-2.92 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.55 0c2.12-1.43 3.05-1.13 3.05-1.13.61 1.52.22 2.64.11 2.92.71.77 1.13 1.75 1.13 2.95 0 4.24-2.58 5.16-5.04 5.44.4.35.75 1.02.75 2.05v3.05c0 .29.2.63.76.53A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="status-card" aria-label="Example Discord game status">
+            <div class="card-topline">
+              <span class="micro-label">DISCORD PRESENCE</span>
+              <span class="live-indicator"><i></i> LIVE</span>
+            </div>
+            <div class="presence-row">
+              <div class="game-art" aria-hidden="true">
+                <span class="art-sun"></span><span class="art-grid"></span>
+                <span class="art-title">VI</span>
+                <span class="art-caption">VICE CITY<br>AFTER HOURS</span>
+              </div>
+              <div class="presence-info">
+                <span class="micro-label">NOW PLAYING</span>
+                <h2>Grand Theft Auto VI</h2>
+                <p>In Vice City</p>
+                <div class="activity-time"><span class="activity-pip"></span> 02:47:19 elapsed</div>
+              </div>
+            </div>
+            <div class="card-bottomline">
+              <span><span class="discord-mark">◉</span> showing on Discord</span>
+              <span class="fake-tag">SCRIPTED REALITY <b>01</b></span>
+            </div>
+            <span class="card-index" aria-hidden="true">LL / 001</span>
+          </div>
+        </section>
+
+        <section id="demo" class="demo-section" aria-labelledby="demo-title">
+          <div class="demo-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> PROOF OF LARP</p>
+              <h2 id="demo-title">See the <span>performance.</span></h2>
+            </div>
+            <p class="demo-note"><span class="record-dot" aria-hidden="true"></span> DEMO CAPTURE<br>COMING SOON</p>
+          </div>
+
+          <!-- Replace this placeholder with the recorded video at assets/demo.mp4. -->
+          <div class="demo-frame" role="img" aria-label="Demo video placeholder: add your recording as assets/demo.mp4">
+            <div class="frame-topline">
+              <span><i></i> CAPTURE SLOT / LL-DEMO-01</span>
+              <span class="frame-timecode">00:00:00:00</span>
+            </div>
+            <div class="demo-placeholder">
+              <div class="capture-orbit orbit-a"></div>
+              <div class="capture-orbit orbit-b"></div>
+              <div class="play-button" aria-hidden="true"><span></span></div>
+              <div class="placeholder-copy">
+                <span class="micro-label">THE MOMENT OF TRUTH</span>
+                <p>Your demo goes here<span class="cursor">_</span></p>
+                <small>Drop your recording into <code>assets/demo.mp4</code></small>
+              </div>
+              <div class="capture-side-note" aria-hidden="true">REC<br>●</div>
+              <div class="scanline" aria-hidden="true"></div>
+            </div>
+            <div class="frame-footer">
+              <span><b>01</b> &nbsp; LARPLAUNCHER IN ACTION</span>
+              <span>NO ACTUAL GAMEPLAY DETECTED <i>✳</i></span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>OPEN SOURCE. CLOSED GAME CLIENT.</span>
+        <span>ALL STATUS. NO SIDE QUESTS. <b>© LL</b></span>
+      </footer>
+    </div>
+  </body>
+</html>
